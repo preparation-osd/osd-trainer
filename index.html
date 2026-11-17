@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ÖSD B1/B2 – Prüfungstrainer</title>
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div class="app">
+<aside class="side"><div class="logo"><span>ÖSD</span><b id="lvlogo">Trainer</b></div><nav id="nav" aria-label="Hauptmenü"></nav>
+<div class="ctl"><div class="acct" id="acct"></div><label class="hint"><input type="checkbox" id="lhon" checked> 📖 Lesehilfe (Wort antippen)</label><label>Modus<select id="mode"><option value="p">Prüfungsmodus</option><option value="u">Übungsmodus</option></select></label>
+<div class="tm"><input id="tmin" type="number" min="1" max="180" value="90" aria-label="Minuten"><output id="tout">90:00</output><button class="g" id="tgo">Start</button><button class="g" id="trs">Reset</button></div></div></aside>
+<main id="main"></main></div>
+<div id="login" class="login" hidden role="dialog" aria-modal="true" aria-label="Anmeldung"><div class="lcard"><h2>Willkommen 👋</h2>
+<p class="hint">Mit einem Konto speicherst du deinen Fortschritt und kannst auf jedem Gerät genau dort weitermachen, wo du aufgehört hast.</p>
+<div id="lform"><input id="lemail" type="email" placeholder="E-Mail" autocomplete="email"><input id="lpass" type="password" placeholder="Passwort (mindestens 6 Zeichen)" autocomplete="current-password">
+<div class="fbtn"><button class="b" id="lin">Anmelden</button><button class="g" id="lreg">Konto erstellen</button></div><p><button class="g" id="lforgot">Passwort vergessen</button></p></div>
+<p id="lnote" class="hint" role="status"></p><hr style="border:0;border-top:1px solid var(--line)">
+<button class="g" id="lguest" style="width:100%;margin-top:8px">Als Gast fortfahren (ohne Konto)</button>
+<p class="hint">Gast: Der Fortschritt bleibt nur in diesem Browser. Du kannst ihn später sichern und auf einem anderen Gerät laden.</p><p><button class="g" id="lclose">Schließen</button></p></div></div>
+<div id="lvl" class="login" hidden role="dialog" aria-modal="true" aria-label="Niveau wählen"><div class="lcard"><h2>Welches Niveau möchtest du üben?</h2>
+<p class="hint">Danach siehst du nur Prüfungen, Wortschatz und Grammatik für dein Niveau. Dein Fortschritt wird für B1 und B2 getrennt gespeichert. Du kannst das Niveau jederzeit wechseln.</p>
+<div id="lvlc" class="grid"></div><p><button class="g" id="lvlx" hidden>Schließen</button></p></div></div>
+<div id="lh" hidden role="dialog" aria-label="Lesehilfe"><div class="lhc"><div class="lhw"><b id="lhs"></b><button class="g" data-lh="x" aria-label="Schließen">✕</button></div><input id="lha" class="ar" dir="rtl" placeholder="Arabisch" aria-label="Arabische Bedeutung (bearbeitbar)"><div class="fbtn"><button class="g" data-lh="say" title="Vorlesen">🔊</button><button class="g" data-lh="gt" title="Google Übersetzer">🌐</button><button class="g" data-lh="ai">🤖 Claude erklärt</button><button class="b" data-lh="add">➕ Karte</button></div></div></div>
+<script src="js/config.js"></script>
+<script src="js/level.js"></script>
+<script src="js/data.js"></script>
+<script src="js/tests.js"></script>
+<script src="js/content_lh.js"></script>
+<script src="js/content_sw.js"></script>
+<script src="js/content_x.js"></script>
+<script src="js/models.js"></script>
+<script src="js/b1_data.js"></script>
+<script src="js/b1_content1.js"></script>
+<script src="js/b1_content2.js"></script>
+<script src="js/b1_content3.js"></script>
+<script src="js/b1_content4.js"></script>
+<script src="js/b1_models.js"></script>
+<script src="js/apply_level.js"></script>
+<script src="js/app.js"></script>
+<script src="js/b1_real.js"></script>
+<script src="js/b1_exam.js"></script>
+<script src="js/b2_exam.js"></script>
+<script src="js/b1_ai.js"></script>
+<script src="js/auth.js"></script>
+</body></html>
